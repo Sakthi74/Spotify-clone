@@ -12,13 +12,13 @@ import tick from "../assets/tick.svg"
 const Sidebar = () => {
     return (
       <>
-            <nav className='flex flex-col    p-12 bg-[#000000] h-screen w-72     justify-between'>
+            <nav className='flex flex-col     bg-[#000000] h-screen w-72 p-12   justify-between'>
                 <div>
                 <img src={logo} alt="" className='h-16 w-36' />
                 <ul className=' hover:text-white  font-bold hover:font-extrabold'>
-                    <li cwidthlassName='cursor-pointer flex gap-7 p-5'> <img src={home} alt="Home" /><h1 className='text-[#B3B3B3]'>Home</h1></li>
-                    <li className='cursor-pointer flex gap-7 p-5'> <img src={search} alt="search" /><h1 className='text-[#B3B3B3]'>Search</h1></li>
-                  <li className='cursor-pointer flex gap-7 p-5'> <img src={library} alt="search" /><h1 className='text-[#B3B3B3]'>Library</h1></li>
+                    <li className='cursor-pointer flex gap-2 p-5'> <img src={home} alt="Home" /><h1 className='text-[#B3B3B3]'>Home</h1></li>
+                    <li className='cursor-pointer flex gap-2 p-5'> <img src={search} alt="search" /><h1 className='text-[#B3B3B3]'>Search</h1></li>
+                  <li className='cursor-pointer flex gap-2 p-5'> <img src={library} alt="search" /><h1 className='text-[#B3B3B3]'>Library</h1></li>
                 </ul>
                 <div className='font-bold'>
                     <div className='cursor-pointer flex gap-2 p-5'> <img src={playlist} alt="" /><h1 className='text-[#B3B3B3]'>Create Playlist</h1></div>

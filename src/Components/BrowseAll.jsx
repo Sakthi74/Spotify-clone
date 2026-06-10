@@ -117,7 +117,7 @@ const BrowseAll = () => {
                 <div className='grid grid-cols-2 lg:grid-cols-5 w-full gap-5'>
             {
                 categories.map((item) => (
-                    <div className='rounded-xl w-full h-60 s  '  style={{ backgroundColor: item.color }}  key={item.id}> <h3 className='text-white font-extrabold p-5'>{item.title}</h3> <img className='ml-[136px] mt-16 sm:ml-0  ' src={item.image} alt=""/></div>
+                    <div className='rounded-xl w-60 h-54   '  style={{ backgroundColor: item.color }}  key={item.id}> <h3 className='text-white font-extrabold p-5'>{item.title}</h3> <img className='ml-[136px] mt-10  ' src={item.image} alt=""/></div>
                    
                     
                 ))

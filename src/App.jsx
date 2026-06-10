@@ -9,6 +9,7 @@ const App = () => {
     <div>
      
       <Browsepage/>
+     
       
     </div>
   )
