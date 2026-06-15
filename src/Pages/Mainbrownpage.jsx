@@ -1,24 +1,23 @@
 import React from 'react'
-import Greenpage from '../Components/Greenpage'
 import Timeline from '../Components/Timeline'
 import Sidebar from '../Components/Sidebar'
-import kasoor from "../assets/kasoor.png"
+import brownpagetl from "../assets/brownpagetl.png"
 import timeline2 from '../assets/timeline2.png'
-import greeenpageimage from "../assets/greenpageimg.png"
+import Brownpage from '../Components/Brownpage'
 
 const Mainbrownpage = () => {
   return (
-     <div className='flex ' >
-          <Sidebar />
-          <div className=' '>
-        <Greenpage />
-        <div className='absolute mr-56'>
-          <Timeline songimage={kasoor} Timeline1image={timeline2} />
-        </div>
-        <img src={greeenpageimage} className='absolute left-0 -mt-2   lg:-mt-48  rounded-2xl h-54 w-36 lg:h-72 lg:w-64 ml-12 md:rounded-md lg:rounded-md  ' alt="" />
-        <h1 className='text-white'>UP NEXT!</h1>
+    <div className='flex min-h-screen bg-[#1f1c19]'>
+    
+      <div className='flex-shrink-0'>
+        <Sidebar />
       </div>
+
       
+      <div className='flex-1 min-w-0 overflow-y-auto'>
+        <Brownpage />
+        <Timeline songimage={brownpagetl} Timeline1image={timeline2} />
+      </div>
     </div>
   )
 }

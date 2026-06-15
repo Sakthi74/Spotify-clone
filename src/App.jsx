@@ -8,12 +8,16 @@ import KillingmoonPage from '../src/Pages/KillingmoonPage'
 import Greenpage from '../src/Pages/MainGreenpage'
 import MainGreenpage from '../src/Pages/MainGreenpage'
 import Brownpage from './Components/Brownpage'
+import Mainbrownpage from './Pages/Mainbrownpage'
+import Playlist from './Components/Playlist'
+import Playlistpage from './Pages/Playlistpage'
+import Podcastpage from "./Pages/Podcastpage"
 
 
 const App = () => {
   return (
     <div>
-    <Brownpage/>
+     <Podcastpage/>
       
     </div>
   )

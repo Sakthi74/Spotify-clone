@@ -12,7 +12,8 @@ import tick from "../assets/tick.svg"
 const Sidebar = () => {
     return (
       <>
-            <nav className=' hidden md:flex flex-col bg-[#000000] h-screen w-72 p-12 justify-between'>
+           
+<nav className='hidden md:flex flex-col bg-[#000000] h-screen w-72 p-12 justify-between box-border flex-shrink-0'>
                 <div>
                 <img src={logo} alt="" className='h-16 w-36  ' />
                 <ul className=' hover:text-white  font-bold hover:font-extrabold'>
