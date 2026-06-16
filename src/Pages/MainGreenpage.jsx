@@ -1,26 +1,56 @@
-import React from 'react'
-import Greenpage from '../Components/Greenpage'
-import Timeline from '../Components/Timeline'
-import Sidebar from '../Components/Sidebar'
-import kasoor from "../assets/kasoor.png"
-import timeline2 from '../assets/timeline2.png'
-import greeenpageimage from "../assets/greenpageimg.png"
+import React from "react";
+import Greenpage from "../Components/Greenpage";
+import Timeline from "../Components/Timeline";
+import Sidebar from "../Components/Sidebar";
+import kasoor from "../assets/kasoor.png";
+import timeline2 from "../assets/timeline2.png";
+import greenpageimage from "../assets/greenpageimg.png";
 
 const MainGreenpage = () => {
   return (
-     <div className='flex ' >
-          <Sidebar />
-          <div className=' '>
-        <Greenpage />
-        <div className='absolute mr-56'>
-          <Timeline songimage={kasoor} Timeline1image={timeline2} />
-        </div>
-        <img src={greeenpageimage} className='absolute left-0 -mt-2   lg:-mt-48  rounded-2xl h-54 w-36 lg:h-72 lg:w-64 ml-12 md:rounded-md lg:rounded-md  ' alt="" />
-        <h1 className='text-white'>UP NEXT!</h1>
-      </div>
-      
-    </div>
-  )
-}
+    <div className="flex min-h-screen bg-[#111517]">
+      {/* Sidebar - hidden on mobile if needed */}
+      <Sidebar />
 
-export default MainGreenpage
+      {/* Main Content */}
+      <div className="flex-1 relative">
+        <Greenpage />
+
+        {/* Timeline */}
+        <div className="w-full px-4 lg:px-8 mt-4">
+          <Timeline
+            songimage={kasoor}
+            Timeline1image={timeline2}
+          />
+        </div>
+
+        {/* Up Next Section */}
+        <div
+          className="
+            mt-6 px-4
+            lg:absolute lg:left-8 lg:bottom-8 lg:mt-0
+          "
+        >
+          <h1 className="text-white font-bold text-lg mb-3">
+            UP NEXT!
+          </h1>
+
+          <img
+            src={greenpageimage}
+            alt="Up Next"
+            className="
+              w-32 h-44 rounded-xl
+              md:w-40 md:h-52
+              lg:w-64 lg:h-72
+              lg:hidden md:hidden block
+              
+              object-cover
+            "
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MainGreenpage;

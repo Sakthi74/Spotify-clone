@@ -1,5 +1,6 @@
 import React from 'react'
-import brownpagemid from "../assets/Brownpagemid.png"
+import bp2 from "../assets/bp2.png"
+import bp1 from "../assets/bp1.png"
 import brownpagemidbuttons from "../assets/browmidbuttons.png"
 
 const Brownpage = () => {
@@ -10,12 +11,18 @@ const Brownpage = () => {
       <div className='bg-[#F8C8A0] w-full h-64 md:h-96 flex items-end p-4 md:p-8'>
     
       </div>
+      <img
+        src={bp1}
+        alt=""
+        className='  w-56 lg:w-96 lg:p-5 md:p-5 p-3 md:w-96  z-12 lg:h-full h-full md:h-44    '
+      />
+
 
       
       <img
-        src={brownpagemid}
+        src={bp2}
         alt=""
-        className=' h-36 w-full md:w-96 lg:w-full z-12 lg:h-52 md:h-44  '
+        className='  w-full md:w-96 lg:w-full z-12 lg:h-full h-full md:h-44 lg:p-5 md:p-5 p-3    '
       />
 
 

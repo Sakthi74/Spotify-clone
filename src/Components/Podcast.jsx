@@ -10,6 +10,7 @@ import pp5 from "../assets/pp5.png"
 import podcastdown1 from "../assets/podcastd1.png"
 import podcastdown2 from "../assets/brownbag.png"
 import Playlistfilter from './Playlistfilter';
+import Signupnav from './Signupnav';
 
 
 const Podcast = () => {
@@ -21,16 +22,29 @@ const Podcast = () => {
       };
     
     return (<>
-        <div>
+        <div className='bg-[#141414]'>
+        <div className="hidden md:block  w-full">
+          <Signupnav />
+        </div>
             <div className='flex p-6 gap-2'>
             <Menu className="text-white md:hidden " onClick={opening} />
                 <h1 className='text-4xl text-white font-extrabold '>Podcasts</h1> 
 
+
       {open && (
-        <div className="block lg:hidden md:hidden mt-12   ">
-          <Playlistfilter />
-        </div>
-      )}
+  <div className="md:hidden absolute top-16 left-0 w-full bg-black shadow-lg z-50">
+    <div className="flex  p-4 gap-4">
+      <button className="text-left text-white font-semibold text-lg">
+        Sign up
+      </button>
+
+      <button className="w-20 bg-white h-8 items-center flex justify-center  text-black font-bold py-3 rounded-sm">
+        Log in
+      </button>
+    </div>
+  </div>
+)}
+
                 
             </div>
                     <h1 className='font-extrabold text-white text-2xl ml-6'>Best Episodes - Editor's Picks</h1>
@@ -72,8 +86,8 @@ Aug 2022 · 20 min</p> */}
 
             {/* div2 */}
             
-                <h1 className='font-extrabold text-white text-2xl hidden lg:block md:block '>Best Of Brown Bag</h1>
-            <div className='lg:flex p-12 ml-12 gap-36 hidden lg:block md:block '>
+                <h1 className='font-extrabold text-white text-2xl ml-12 hidden lg:block md:block '>Best Of Brown Bag</h1>
+            <div className='lg:flex p-12 ml-12 gap-24 mt-24  hidden lg:block md:block '>
                 <img src={podcastdown1} alt="" />
                 <img src={podcastdown2} alt="" />
                 <img src={podcastdown2} alt="" />

@@ -12,12 +12,34 @@ import Mainbrownpage from './Pages/Mainbrownpage'
 import Playlist from './Components/Playlist'
 import Playlistpage from './Pages/Playlistpage'
 import Podcastpage from "./Pages/Podcastpage"
+import Focus from './Components/Focus'
+import Focuspage from './Pages/Focuspage'
+// import Mainbrownpage from './Pages/Mainbrownpage'
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
+import Routingpage from './Components/Routingpage'
 
 
 const App = () => {
   return (
     <div>
-     <Podcastpage/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Routingpage/>} />
+
+          <Route path='/podcast' element={<Podcastpage />} />
+          <Route path='/playlist' element={<Playlistpage />} />
+          <Route path='/focus' element={<Focuspage />} />
+          <Route path='/green' element={<MainGreenpage/>} />
+          <Route path='/brown' element={<Mainbrownpage />} />
+          <Route path='/killingmoon' element={<KillingmoonPage/>} />
+          <Route path='/Goodafternoonpage' element={<GoodAfternoonpage />} />
+                   <Route path='/browsepage' element={<Browsepage/>} />
+
+
+         
+        </Routes>
+      
+      </BrowserRouter>
       
     </div>
   )
