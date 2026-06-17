@@ -14,6 +14,7 @@ import Playlistfilter from "../Components/Playlistfilter";
 const Playlist = () => {
   const [open, setOpen] = useState(false);
 
+  // OPENING FUNCTION FOR  BURGER MENU
   const opening = () => {
     setOpen((prev) => !prev);
   };
@@ -32,6 +33,7 @@ const Playlist = () => {
         <Playlistfilter />
       </div>
 
+      {/* CONDITIONAL RENDERING FOR FILTER BAR IN SM */}
       {open && (
         <div className="block lg:hidden md:hidden mt-4 ">
           <Playlistfilter />

@@ -18,8 +18,10 @@ const Killingmoon = () => {
   return (
     <div className='bg-[#111517] ' >
      
-
-            <ChevronDown className="absolute text-white -mt-24 w-8 h-8 z-50 block md:hidden lg:hidden" onClick={openpopup} />
+              //Down arrow for small screen
+      <ChevronDown className="absolute text-white -mt-24 w-8 h-8 z-50 block md:hidden lg:hidden" onClick={openpopup} />
+      
+          {/* middle section */}
           <img src={killingmoonimage} className='h-96 w-96 rounded-md z-0 p-1 md:p-0 lg:p-0 md:h-32 md:w-screen lg:w-screen lg:h-[700px] mt-32 md:mt-0 lg:mt-0 ml-4 md:ml-0 lg:ml-0' alt="" />
           <div className='bg-[#111517] w-full h-full lg:flex gap-5 ml-12 relative'>
             <img src={greendot} alt="" className='hidden md:block lg:block' />
@@ -28,7 +30,7 @@ const Killingmoon = () => {
         
       </div>
       
-      
+      {/* Dropdown for  sm screen */}
       { dropdown && <ul className='bg-[#1ed760] text-[#052611] -mt-[450px] absolute rounded-2xl  font-bold'>
         <li className='border-b-2  border-0.5 p-2 align-middle'>HOME</li>
         <li className='border-b-2  border-0.5 p-2 align-middle'>SEARCH</li>

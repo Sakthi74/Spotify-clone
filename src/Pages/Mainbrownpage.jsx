@@ -4,13 +4,15 @@ import Sidebar from '../Components/Sidebar'
 import brownpagetl from "../assets/brownpagetl.png"
 import timeline2 from '../assets/timeline2.png'
 import Brownpage from '../Components/Brownpage'
+import bookmark from "../assets/Bookmark.png"
 
 const Mainbrownpage = () => {
+    const arr=["Bollywood Jazz","Hangover cure","Your Top songs 2026","Desi Indie","Rock in India","Radar in India"]
   return (
     <div className='flex min-h-screen bg-[#1f1c19]'>
     
       <div className='flex-shrink-0'>
-        <Sidebar />
+        <Sidebar Bookmark={bookmark} Arr={arr} />
       </div>
 
       

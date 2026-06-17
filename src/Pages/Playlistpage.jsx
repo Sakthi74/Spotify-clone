@@ -4,12 +4,14 @@ import playlsitsong from "../assets/playlsitpagesong.png"
 import timeline2 from "../assets/timeline3.png"
 import Sidebar from "../Components/Sidebar.jsx"
 import Timeline from '../Components/Timeline.jsx'
+import bookmark from "../assets/Bookmark.png"
+
 
 const Playlistpage = () => {
   return (
    
      <div className='flex ' >
-          <Sidebar />
+          <Sidebar Bookmark={bookmark} />
           <div className=' '>
         <Playlist/>
         <div className='absolute mr-56'>

@@ -9,11 +9,13 @@ import english from "../assets/english.svg"
 import tick from "../assets/tick.svg"
 
 
-const Sidebar = () => {
+const Sidebar = ({ Bookmark, Arr }) => {
+    console.log(Arr)
+    
     return (
       <>
            
-<nav className='hidden md:flex flex-col bg-[#000000] h-screen w-72 p-12 justify-between box-border flex-shrink-0'>
+<nav className='hidden md:flex flex-col bg-[#000000] h-full lg:h-screen w-72 p-12 justify-between box-border flex-shrink-0'>
                 <div>
                 <img src={logo} alt="" className='h-16 w-36  ' />
                 <ul className=' hover:text-white  font-bold hover:font-extrabold'>
@@ -23,7 +25,11 @@ const Sidebar = () => {
                 </ul>
                 <div className='font-bold'>
                     <div className='cursor-pointer flex gap-2 p-5'> <img src={playlist} alt="" /><h1 className='text-[#B3B3B3]'>Create Playlist</h1></div>
-                    <div className='cursor-pointer flex gap-2 p-5'> <img src={liked} alt="" /><h1 className='text-[#B3B3B3]'>Liked Songs</h1></div>
+                        <div className='cursor-pointer flex gap-2 p-5'> <img src={liked} alt="" /><h1 className='text-[#B3B3B3]'>Liked Songs</h1></div>
+                        {Bookmark &&
+                            <div className='cursor-pointer flex gap-2 p-5'> <img src={Bookmark} alt="" /><h1 className='text-[#B3B3B3]'>Liked Songs</h1></div>}
+                        {Arr && <ul className='border-t-1 border-t-[#B3B3B3]'>{Arr.map((item,index)=>(<li className='text-[#B3B3B3] text-sm font-medium p-2 ml-6
+' key={index}>{item}</li>))}</ul>}
 
                     </div>
                 </div>

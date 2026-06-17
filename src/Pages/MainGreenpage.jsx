@@ -5,12 +5,13 @@ import Sidebar from "../Components/Sidebar";
 import kasoor from "../assets/kasoor.png";
 import timeline2 from "../assets/timeline2.png";
 import greenpageimage from "../assets/greenpageimg.png";
+import bookmark from "../assets/Bookmark.png"
 
 const MainGreenpage = () => {
   return (
     <div className="flex min-h-screen bg-[#111517]">
       {/* Sidebar - hidden on mobile if needed */}
-      <Sidebar />
+      <Sidebar Bookmark={bookmark} />
 
       {/* Main Content */}
       <div className="flex-1 relative">

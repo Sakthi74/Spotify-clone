@@ -39,7 +39,7 @@ const GoodAfternoon = () => {
             <div className="bg-[#303030] min-h-screen p-6">
 
   <h1 className="font-bold text-white text-2xl mb-6">
-    Browse all
+    Good Afternoon
   </h1>
 
   <div
@@ -66,7 +66,7 @@ const GoodAfternoon = () => {
           h-20
           cursor-pointer
           hover:bg-[#525252]
-          mt-32
+        
         "
       >
         <img
